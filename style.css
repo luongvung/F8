@@ -91,7 +91,11 @@
     padding: 18px;
     font-size: 18px;
   }
-  
+
+  .btn-prev:hover, .btn-next:hover {
+    color: #ec1f55;
+  }
+
   .control .btn.active {
     color: var(--primary-color);
   }
@@ -107,8 +111,13 @@
     justify-content: center;
     background-color: var(--primary-color);
   }
+
+  .progress-wrapper {
+    text-align: right;
+  }
+
   
-  .progress {
+  .progress-wrapper .progress {
     width: 100%;
     -webkit-appearance: none;
     height: 6px;
@@ -117,6 +126,15 @@
     opacity: 0.7;
     -webkit-transition: 0.2s;
     transition: opacity 0.2s;
+    display: flex;
+  }
+  
+  .progress-current {
+    text-align: left;
+  }
+
+  .progress-duration {
+    margin-left: 350px;
   }
   
   .progress::-webkit-slider-thumb {
